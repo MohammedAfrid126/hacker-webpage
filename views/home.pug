@@ -1,0 +1,46 @@
+extends base.pug
+
+block script
+    script(src='../static/script.js')
+
+block style
+    style 
+        include ../static/style.css
+        //- include ../static/phone.css
+
+block content 
+    section#introSection 
+        div Welcome to the Hacking Academy
+        div.small Eat - Hack - Repeat
+    
+    section#missionSection
+        h2 Hackers
+        div.card 
+            h3 White Hat Hacker
+            div.cardBox
+                div.cardImg
+                    img(src="/static/img/imgs/WHH.png", alt="", srcset="")
+                div.cardContent
+                    p White hat Hackers are also known as Ethical Hackers or a Penetration Tester.
+        div.card 
+            h3 Grey Hat Hacker
+            div.cardBox
+                    div.cardImg
+                        img(src="/static/img/imgs/GHH.png", alt="", srcset="")
+                    div.cardContent
+                        p Gray hat Hackers are Hybrid between Black hat Hackers and White hat hackers. 
+        div.card 
+            h3 Black Hat Hacker
+            div.cardBox
+                    div.cardImg
+                        img(src="/static/img/imgs/BHH.png", alt="", srcset="")
+                    div.cardContent
+                        p Black-hat Hackers are also known as an Unethical Hacker or a Security Cracker.
+
+    section#sponsorSection
+        h2 Our Sponsor
+        div#sponsor
+            img(src="/static/img/clientLogo/logo1.png", alt="", srcset="", class="spImg")
+            img(src="/static/img/clientLogo/logo2.png", alt="", srcset="", class="spImg")
+            img(src="/static/img/clientLogo/logo3.png", alt="", srcset="", class="spImg")
+            img(src="/static/img/clientLogo/logo4.png", alt="", srcset="", class="spImg")

@@ -1,0 +1,18 @@
+{
+  "name": "dance-website",
+  "version": "1.0.0",
+  "description": "this is a dance website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "build.js"
+  },
+  "author": "Afridi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "pug": "^3.0.2"
+  }
+}
